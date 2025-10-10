@@ -1,0 +1,6 @@
+
+6:41:29 PM: GET & /tweet
+6:41:33 PM: POST & /tweet
+6:42:00 PM: POST & /tweetr
+6:42:06 PM: PUT & /tweet
+6:42:16 PM: GET & /contact
