@@ -1,0 +1,20 @@
+{
+  "name": "02-bookstoreapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.7.1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
