@@ -18,7 +18,7 @@ router.patch("/", ensureAuthenticated, async (req, res) => {
   const [updatedUser] = await db
     .update(usersTable)
     .set({ name })
-    .where(eq(usersTable.id, user.id))
+    .where(eq(usersTable.id, req.user.id))
     .returning({
       name: usersTable.name,
     });
@@ -28,7 +28,7 @@ router.patch("/", ensureAuthenticated, async (req, res) => {
 
 //return the current log in user
 router.get("/", ensureAuthenticated, async (req, res) => {
-  return res.json({ status: "success", data: user });
+  return res.json({ status: "success", data: req.user });
 });
 
 router.post("/signup", async (req, res) => {
